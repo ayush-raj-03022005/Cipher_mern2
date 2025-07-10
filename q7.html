@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Traversal</title>
+  <script>
+    window.onload = function () {
+      const para = document.getElementById("para");
+
+      console.log("Current Element (para):", para);
+      console.log("Parent Node of para:", para.parentNode);
+      console.log("Child Nodes of container:", document.getElementById("container").childNodes);
+      console.log("Next Sibling of para:", para.nextSibling);
+    };
+  </script>
+</head>
+<body>
+
+  <div id="container">
+    <h2>Heading</h2>
+    <p id="para">This is a paragraph.</p>
+    <span>Another element</span>
+  </div>
+
+</body>
+</html>
