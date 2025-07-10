@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Box</title>
+  <style>
+    .responsive-box {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      .responsive-box {
+        padding: 15px;
+        font-size: 0.95em;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .responsive-box {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="responsive-box">
+    <h2>Responsive Content</h2>
+    <p>This box scales down and adjusts padding/text size on smaller screens.</p>
+  </div>
+
+</body>
+</html>

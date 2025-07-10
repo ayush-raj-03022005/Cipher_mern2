@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible & Responsive Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      input, button {
+        font-size: 0.95rem;
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <img src="https://via.placeholder.com/600x200" alt="Newsletter banner image" />
+    <form aria-label="Newsletter subscription form">
+      <input type="text" placeholder="Your name" />
+      <input type="email" placeholder="Your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+</body>
+</html>
